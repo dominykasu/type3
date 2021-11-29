@@ -7,4 +7,5 @@ button.onclick = generateNumber
 function generateNumber() {
     let randNumb = Math.floor(Math.random()*100)
     randomNumber.innerText = randNumb
+
 }
