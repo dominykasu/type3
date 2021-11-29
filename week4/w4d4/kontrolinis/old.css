@@ -1,0 +1,84 @@
+/*pirma dalis UI elements*/
+/*antra dalis per skirtingus ekranus*/
+/*kad ekrana nuscrollintu iki reikiamos vietos - scrollspy*/
+
+/*biblioteka turetu tureti savo pavadinima ir primary color vientisa*/
+
+/*.container {*/
+/*    width:900px;*/
+/*    box-sizing:unset   ;*/
+/*    display: grid;*/
+/*    background-color: orangered;*/
+/*    grid-template-columns: 250px 650px ;*/
+/*    grid-template-rows: 10vh 80vh 10vh;*/
+/*    grid-template-areas:*/
+/*"header ."*/
+/*"nav main"*/
+/*". footer";*/
+/*}*/
+
+/*grid classes*/
+.footer {
+    grid-area:footer;
+    background-color: lightpink;
+}
+.header {
+    grid-area:header;
+    background-color: red;
+}
+.content {
+    grid-area:main;
+    background-color: #ffb800;
+}
+.nav {
+    float:left;
+    grid-area:nav;
+    background-color: blueviolet;
+}
+/*//*/
+a {
+    text-decoration: none;
+    color:white;
+}
+/*!*.img {*!*/
+/*!*    height: 360px;*!*/
+/*!*    width: 360px;*!*/
+/*!*    background-color: green;*!*/
+/*!*}*!*/
+/*!*.smallimg {*!*/
+/*!*    background-color: azure;*!*/
+/*!*}*!*/
+/*.card {*/
+/*    width:200px;*/
+/*    margin-right: 15px;*/
+/*}*/
+/*@media (max-width: 700px) {*/
+/*    .container {*/
+/*        width:100%;*/
+/*        grid-template-columns: 3fr 1fr;*/
+/*        grid-template-rows: 50px 250px auto;*/
+/*        grid-template-areas:*/
+/*"toolbar toolbar"*/
+/*"header header"*/
+/*"main main";*/
+/*    }*/
+/*    .d-sm-none {*/
+/*        display: none;*/
+/*    }*/
+/*    .card {*/
+/*        display: flex;*/
+/*        width:100%;*/
+/*    }*/
+/*    .card >img {*/
+/*        flex:2;*/
+/*        height: 50vh;*/
+/*        width: 50vw;*/
+/*    }*/
+/*    !*.card >p {*!*/
+/*    !*    flex:3;*!*/
+/*    !*}*!*/
+/*    .img-small {*/
+/*        width: 150px;*/
+/*        height: 150px;*/
+/*    }*/
+/*}*/

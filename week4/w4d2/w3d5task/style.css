@@ -1,0 +1,82 @@
+body {
+    margin:0;
+}
+/*flex stuff*/
+.d-flex {
+    display: flex;
+}
+.j-center {
+    justify-content: center;
+}
+.space-btw {
+    justify-content: space-between;
+}
+.flex1 {
+    flex: 1;
+}
+.flex4 {
+    flex:4;
+}
+.container {
+    width:900px;
+    background-color: orangered;
+}
+/*CUSTOM CLASSES*/
+.toolbaricons > div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: darkred;
+    margin-left: 15px;
+}
+.header {
+    height: 150px;
+    background-color: lightpink;
+}
+
+/*paddings margins*/
+.p-30 {
+    padding:30px;
+}
+.mt-20 {
+    margin-top:20px;
+}
+.plr-20 {
+    padding:0 20px;
+}
+.pl-20 {
+    padding-left:20px;
+}
+
+.sidebar {
+    background-color: blueviolet;
+}
+.img {
+    height: 360px;
+    width: 360px;
+    background-color: green;
+}
+.smallimg {
+background-color: azure;
+}
+.d-none {
+    display: none;
+}
+@media (max-width: 700px) {
+.container {
+    background-color: orange;
+    width:100%;
+}
+    .sidebar {
+        display: none;
+    }
+    .d-none {
+        display: unset;
+    }
+    .sm-column {
+        flex-direction: column;
+    }
+    .sm-order1 {
+        order:1;
+    }
+}
