@@ -1,0 +1,45 @@
+.flex {
+    display: flex;
+}
+.column {flex-direction: column;}
+.gr1 {flex-grow: 1;}
+.gr2 {flex-grow:2;}
+.gr6 {flex-grow: 6;}
+body {
+    width:100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
+}
+.main {
+    width:80vw;
+    height:90vh;
+    background-color: gray;
+    margin:50px;
+}
+.one{background-color: yellow;}
+.two{background-color: green;}
+.three{background-color: red;}
+.four{background-color: cornflowerblue;}
+.five{background-color: blueviolet;}
+.six{background-color: white;}
+.seven{background-color: lightpink;}
+.eight{background-color: sandybrown;}
+.test {flex-grow: 6; display: flex;}
+@media (max-width: 600px) {
+    .main {flex-direction: column-reverse;}
+    .eight {order:2;}
+    .six{display:none;}
+    .one{order:1;}
+    .sevenfive {order:-1;flex-grow: 1;}
+    .nocolumn {flex-direction: unset;flex-grow: 2;}
+.test {display: flex;
+    flex-direction: column;
+    flex-grow: 6;}
+    .five{background-color: blueviolet;order: 1;}
+    .two {order:0;}
+    .three {  order: -1;}
+    .four {order:1;    }
+}

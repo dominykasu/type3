@@ -1,0 +1,55 @@
+
+
+body {
+    padding-top: 50px;
+}
+/*.container {*/
+/*    height: 600px;*/
+/*}*/
+.header {
+    background-color: #3a3a3a;
+    margin: 0;
+}
+.menu {
+    background-color: #c73636;
+    margin: 0;
+}
+.hero {
+    background-color: #00ffc4;
+    margin: 0;
+}
+.main {
+    background-color: #ffb800;
+    margin: 0;
+
+}
+.banner {
+    background-color: rgba(171, 164, 218, 0.5);
+    margin: 0;
+
+}
+.extra {
+    background-color: #7d7eff;
+    margin: 0;
+
+}
+.image {
+    background-color: #53726c;
+    margin: 0;
+
+}
+.h75 {
+    height: 75px;
+}
+.h70 {
+    height: 70px;
+}
+.h100 {
+    height: 100px;
+}
+.h200 {
+    height: 200px;
+}
+.h300 {
+    height: 300px;
+}

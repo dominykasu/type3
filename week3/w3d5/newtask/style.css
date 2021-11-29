@@ -1,0 +1,65 @@
+.flex {
+    display: flex;
+}
+.column {flex-direction: column;}
+.sp-btw {justify-content: space-between;}
+.sp-ev {justify-content: space-evenly;}
+.just-c {justify-content: center;}
+.align-c {align-items: center;}
+.gr1 {flex-grow: 1;}
+.gr2 {flex-grow:2;}
+.gr4 {flex-grow: 4;}
+.gr6 {flex-grow: 6;}
+.gr5 {flex-grow: 5;}
+body {
+    width:100vw;
+    height: 100vh;
+    /*background-color: black;*/
+    display: flex;
+    justify-content: center;
+
+}
+.main {
+    width:80vw;
+    height:90vh;
+
+    margin:50px;
+}
+.one{
+    text-align: center;
+}
+.two {
+    background-image: url("https://previews.123rf.com/images/freestyledesignworks/freestyledesignworks1906/freestyledesignworks190600003/127571592-spaceship-flying-alien-ufo-spacecraft-in-flight-isolated-on-white-background-rear-view-3d-rendering.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin:0 0 2% 0;
+}
+.three{
+    background-image: url("https://previews.123rf.com/images/djvstock/djvstock1608/djvstock160802274/60633759-rocket-spaceship-science-aircraft-icon-isolated-and-flat-illustration-vector-graphic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.four{}
+.five{background-color: blueviolet;}
+.six{background-color: white;}
+.seven{background-color: lightpink;}
+.image { background-image: url("https://i1.sndcdn.com/artworks-000610286929-48c1kv-t500x500.jpg");
+border-radius: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.button {
+    width:20px;
+    height: 20px;
+    background-color: white;
+    margin:5px;
+}
+@media (max-width: 600px) {
+    .three {display: none;}
+.four {flex-grow: 3;}
+
+}

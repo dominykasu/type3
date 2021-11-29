@@ -1,0 +1,36 @@
+.player, .enemy {
+    width:400px;
+    height: 400px;
+    /*background-color: red;*/
+}
+img {
+    width:200px;
+}
+.playerHP {
+    width:100%;
+    height:30px;
+    background-color: green;
+
+    color:white;
+    font-weight: bold;
+}
+.enemyHP {
+    width:100%;
+    height:30px;
+    background-color: red;
+
+    font-weight: bold;
+
+
+}
+.weaponSize {
+    width:35px;
+    height: 35px;
+}
+.selectedWeapon {
+    border:1px solid black;
+}
+.potionSize {
+    width:55px;
+    height:65px;
+}

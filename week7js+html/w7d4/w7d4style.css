@@ -1,0 +1,24 @@
+/*.card {*/
+/*    padding:5px;*/
+/*    margin:5px;*/
+/*    background-color: #d28812;*/
+/*}*/
+
+.box {
+    display: flex;
+    width:900px;
+  }
+.gr1 {
+    margin:5px;
+    padding:5px;
+}
+.gr2 {
+    width:400px;
+    margin:5px;
+    padding:5px;
+}
+img {
+    width: 200px;
+    height: 300px;
+    object-fit: scale-down;
+}

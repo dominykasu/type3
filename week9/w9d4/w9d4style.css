@@ -1,0 +1,9 @@
+img {
+    width:100px;
+}
+.card {
+    width:200px;
+    padding:5px;
+    margin:5px;
+    overflow: hidden;
+}

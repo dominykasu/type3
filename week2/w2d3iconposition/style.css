@@ -1,0 +1,43 @@
+.room {
+    height: 1000px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-image: url("https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGl2aW5nJTIwcm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+}
+
+.iconcut {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-image: url("https://lh3.googleusercontent.com/64GWPJbpSJKB2hejLK02GLHjflv2B8cCr7SJUQI7cHXO0Qakc28U-ZRw7IRL3WadD8Stugb1HB4GgpqEkRydsEaR9AC4SqrTeRlCDlo=w1064-v0");
+}
+
+.letter{
+    background-position: 182px 695px;
+    top: 580px;
+    left: 360px;
+   }
+
+.face {
+    background-position: -582px 978px;
+    top: 446px;
+    left: 268px;
+}
+
+.cloud {
+    background-position: -732px 1047px;
+    top: 158px;
+    left: 118px;
+}
+
+.signal {
+    background-position: -508px 1119px;
+    top: 103px;
+    left: 437px;
+}
+
+.flag {
+    background-position: -130px 765px;
+    top: 431px;
+    left: 540px;
+}

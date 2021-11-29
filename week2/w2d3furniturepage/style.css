@@ -1,0 +1,115 @@
+h4 {
+    text-align:center;
+    font-size: 14px;
+    background-color: darkgray;
+    padding: 5px;
+}
+.flex {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    padding:5px;
+}
+.space-btw {
+    justify-content: space-between;
+}
+.space-ar {
+    justify-content: space-around;
+}
+.middle-a {
+
+    align-items: center;
+}
+.middle-c {
+    justify-content: center;
+}
+.hpad {
+    padding-left:40px;
+    padding-right:40px;
+}
+.container img {
+    width: 100%;
+}
+.container {
+    text-align: center;
+}
+.container .center {
+
+    color:white;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centerbg {
+    background-color: #ffffff;
+    margin: 30px;
+
+    border: 1px solid black;
+    opacity: 0.6;
+}
+.centerbg h1, .centerbg p, .button {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+.button {
+    background-color: black;
+    color:white;
+    border-style: solid;
+    width: 120px;
+    margin: auto auto 10px auto;
+
+}
+.third p {
+    font-size:13px;
+}
+.prod img{
+    width:200px;
+  height:300px;
+    }
+.prod h4 {
+    background-color: revert;
+}
+.prod p {
+    font-size: 13px;
+    margin-top: -20px;
+}
+.imgtext {
+    margin-top:30px;
+}
+.imgtext h2, .imgtext p {
+    text-align: left;
+}
+.widthheight {
+    width:500px;
+}
+.test {
+    margin-top:15%;
+}
+.divpic {
+    background-image: url("https://www.emohdesign.com/image/cache/catalog/Homepage%20sliders/SEN%20walnut%20slider_1500x790-1500x790.jpg");
+width:100%;
+       height: 600px;
+    background-position: center;
+    }
+.center1 {
+text-align: center;
+    padding-top: 20%;
+    color:white;
+   font-weight: bold;
+}
+.center2 {
+    padding-top: 5%;
+    text-align: center;
+        color:black;
+    width:100%;
+    height: 200px;
+
+}
+footer .flex {
+    text-align: center;
+}

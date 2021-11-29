@@ -1,0 +1,78 @@
+.container1 {
+    height:100vh;
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px;
+    grid-template-areas:
+    "one one two"
+    "three three two"
+    "four four four";
+}
+.container2 {
+    height:100vh;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-template-areas:
+    "one two two three"
+    "one two two three"
+    "one four five five"
+    "one four five five";
+}
+.container3 {
+    height:100vh;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-template-areas:
+    "one one one one"
+    "two three three secondtwo"
+    "two three three secondtwo"
+    "four four four four";
+}
+.container4 {
+    height:100vh;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px;
+    grid-template-areas:
+    "one one one one one one"
+    "two two two two two two"
+    "two two two two two two"
+    "three three four four four four"
+    "three three five five five five"
+    "six six six six six six";
+}
+.one {
+    background-color: black;
+    grid-area:one;
+}
+.two {
+    background-color: dodgerblue;
+    grid-area:two;
+}
+.three {
+    background-color: orange;
+    grid-area:three;
+}
+.four {
+     background-color: darkred;
+     grid-area:four;
+ }
+.five {
+    background-color: greenyellow;
+    grid-area:five;
+}
+.six {
+    background-color: blueviolet;
+    grid-area:six;
+}
+.secondtwo {
+    background-color: dodgerblue;
+    grid-area:secondtwo;
+}
+.flex {
+    display: flex;
+}
+.m5 { margin:5px;}
+

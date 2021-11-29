@@ -1,0 +1,9 @@
+.flex {
+    display:flex;
+    }
+.shop {
+    flex-grow: 1;
+}
+.inventory {
+    flex-grow: 1;
+}

@@ -1,0 +1,38 @@
+.container1 {
+    height:100vh;
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: 5vh 25vh 50vh 20vh;
+    grid-template-areas:
+    "one one one "
+    "two two two "
+    "three three three "
+    "four four four ";
+}
+.toolbar {
+    background-color: white;
+    grid-area:one;
+}
+.header {
+    background-color: gray;
+    grid-area:two;
+}
+.main {
+    background-color: orange;
+    grid-area:three;
+}
+.footer {
+    background-color: darkred;
+    grid-area:four;
+}
+.flex {display: flex}
+.flex-wrap { flex-wrap: wrap;}
+.sp-btw {
+    justify-content: space-between;
+}
+.sp-ar {
+    justify-content: space-around;
+}
+.sp-even {justify-content: space-evenly;}
+.gr1 {flex-grow: 1}
+.main-ele {height:50%; width: 33%;}

@@ -1,0 +1,252 @@
+body {background-color: lightpink;
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    font-family: 'Quicksand', sans-serif;
+font-size:25px;
+    font-weight: 1800;
+}
+.container {background-color: white;
+    margin-top:90px;
+    margin-bottom:90px;
+    padding:0 3% 3% 3%;
+    border-radius: 4%;
+    width:900px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 31%;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-areas:
+    "toolbar toolbar toolbar toolbar "
+    "header header header header"
+    /*"minit minit minit minit "*/
+    "main main main side";
+    /*height: auto;*/
+}
+/*//search area*/
+input {
+        border: none;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    background-color: sandybrown;
+    border: none;
+    border-radius: 10%;
+    color:white;
+}
+form {
+    background-color: white;
+    width:29%;
+    border-radius: 10%;
+
+}
+/*/*/
+.toolbar {
+       grid-area:toolbar;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size:14px;
+}
+/*buttons*/
+.buttons {
+    background-color: white;
+    width: fit-content;
+    border-radius: 5%;
+}
+.button1, .button2 {
+    width:65px;
+    height:30px;
+    margin:1px;
+    border-radius: 10%;
+}
+input[type="text"] {
+    font-size:15px;
+}
+.button1 {
+    background-color: cornflowerblue;
+}
+.button2 {
+    background-color: white;
+}
+/*buttons end*/
+.header {
+    background-image: url("https://cdn.cnn.com/cnnnext/dam/assets/201231114619-01-oz-ourdomain-student-housing-full-169.jpg");
+    grid-area:header;
+    padding:40px;
+    border-radius: 5%;
+    display: flex;
+    justify-content: end;
+
+
+}
+.column { flex-direction: column}
+/*main*/
+.main {
+    grid-area:main;
+}
+
+.side {
+        grid-area:side;
+    font-size: 15px;
+}
+.flex {display: flex;}
+a {text-decoration: none;
+color:black;
+
+}
+.align-e {align-items: end;}
+.align-c {align-items: center}
+.just-c {justify-content: center;}
+.sp-btw {justify-content: space-between;}
+.sp-around {justify-content: space-around;}
+.just-r {justify-content: right;}
+.justify-end {justify-content: end;}
+.gr1 {flex:1;}
+.gr2 {flex:2;}
+.img {
+
+    background-image: url("https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/03/GettyImages-1092658864_hero-1024x575.jpg?w=1155&h=1528");
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+
+}
+.main {
+    align-items: center;
+    font-size: 15px;
+}
+.card1 {
+    height: 180px;
+    width: 180px;
+    border-radius: 15%;
+    background-image: url("https://i.pinimg.com/originals/8b/2b/ee/8b2beedbf7395a7d419fba3ca019af2e.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.card2 {
+    height: 180px;
+    width: 180px;
+    border-radius: 15%;
+    background-image: url("https://images.adsttc.com/media/images/5fb4/98ac/63c0/17fd/1900/020c/large_jpg/MvdB_0708-300.jpg?1605671075");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card3 {
+    height: 140px;
+    width: 180px;
+    border-radius: 15%;
+    background-image: url("https://images.adsttc.com/media/images/5fb4/99f3/63c0/17fd/1900/0212/large_jpg/MvdB_DSC08351-300.jpg?1605671402");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sideimg1 {
+    background-image: url("https://i.pinimg.com/564x/70/d8/fc/70d8fc56ed30bb35da4e5b9f1a206d15.jpg");
+ width:100px;
+    height: 100px;
+    border-radius: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sideimg2 {
+    background-image: url("https://b.thumbs.redditmedia.com/g4B8xGYcIoWM-nD7NUNSXnAx71X71TjZ0D4neBw0DCI.png");
+    width:100px;
+    height: 100px;
+    border-radius: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sideimg1, .sideimg2 {
+    margin:15px;
+}
+.text {
+    margin-top:15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.text .price {
+    font-weight: bold;
+}
+.text .address {
+    font-weight: bold;
+    font-size: smaller;
+}
+.text .postcode {
+    font-size: small;
+    opacity: 30%;
+}
+.text .rooms {
+    font-size: 9px;
+}
+.column button {
+    width:90px;
+}
+.fa-solid {
+    text-align: right;
+    opacity: 30%;
+}
+/*.blur {*/
+/*    background-color: white;*/
+/* text-align:center ;*/
+/*    padding:4px;*/
+/*    width:80%;*/
+/*    height: 20%;*/
+/*    margin:20px;*/
+/*  filter: blur(2px);*/
+/*    opacity: 75%;*/
+/*    position: relative;*/
+/*}*/
+/*.blur {*/
+/*    background-color: #ffffff;*/
+
+/*        padding:2px;*/
+/*        width:80%;*/
+/*        height: 20%;*/
+/*        margin:20px;*/
+
+/*    backdrop-filter: blur(5px);*/
+/*}*/
+.blur {
+    width: 85%;
+    height: 30px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.53);
+    border-radius: 10px 10px 10px 10px;
+    margin:20px;
+    padding:5px;
+}
+.topright {
+    width: 45%;
+    height: 40px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(125, 126, 255, 0.78);
+    border-radius: 10px 10px 10px 10px;
+}
+.blur .postcode {
+      font-size: small;
+  }
+
+.blur .address {
+      font-weight: bold;
+      font-size: smaller;
+  }
+.fs10 {text-align: center}
+
+
+
+

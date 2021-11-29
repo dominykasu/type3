@@ -2,6 +2,8 @@ body {
     margin:0;
 }
 /*flex stuff*/
+.flex-wrap { flex-wrap: wrap;
+}
 .d-flex {
     display: flex;
 }
@@ -19,21 +21,28 @@ body {
 }
 .container {
     width:900px;
+    display: grid;
     background-color: orangered;
+    grid-template-columns: 600px 300px;
+    grid-template-rows: 50px 250px auto;
+    grid-template-areas:
+"toolbar toolbar"
+"header header"
+"main sidebar";
 }
 /*CUSTOM CLASSES*/
-.toolbaricons > div {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: darkred;
-    margin-left: 15px;
+.toolbar {
+grid-area:toolbar;
 }
 .header {
-    height: 150px;
-    background-color: lightpink;
+    grid-area:header;
 }
-
+.main {
+    grid-area:main;
+}
+.sidebar {
+    grid-area:sidebar;
+}
 /*paddings margins*/
 .p-30 {
     padding:30px;
@@ -62,21 +71,60 @@ background-color: azure;
 .d-none {
     display: none;
 }
-@media (max-width: 700px) {
-.container {
-    background-color: orange;
-    width:100%;
+.card {
+    width:200px;
+    margin-right: 15px;
 }
-    .sidebar {
-        display: none;
+@media (max-width: 700px) {
+    .container {
+        width:100%;
+
+
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 50px 250px auto;
+        grid-template-areas:
+"toolbar toolbar"
+"header header"
+"main main";
     }
-    .d-none {
-        display: unset;
+    .d-sm-none {
+        display: none;
+}
+    .card {
+        display: flex;
+        width:100%;
+    }
+    .card >img {
+        flex:2;
+        height: 100%;
+        width: 100%;
+    }
+    .card >p {
+        flex:3;
+    }
+    .img-small {
+        width:150px;
+        height: 150px;
     }
     .sm-column {
         flex-direction: column;
     }
-    .sm-order1 {
-        order:1;
+    .flex-sm-1 {
+        flex:1;
     }
+    .flex-sm-4 {
+        flex:4;
+    }
+    /*.sidebar {*/
+    /*    display: none;*/
+    /*}*/
+    /*.d-none {*/
+    /*    display: unset;*/
+    /*}*/
+    /*.sm-column {*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*.sm-order1 {*/
+    /*    order:1;*/
+    /*}*/
 }

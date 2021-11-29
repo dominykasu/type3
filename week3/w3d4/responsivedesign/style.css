@@ -1,0 +1,49 @@
+/*@media (min-width: 600px) {*/
+/*body {*/
+/*    background-color: blue;*/
+/*}*/
+/*}*/
+/*@media (max-width: 600px) {*/
+/*    body {*/
+/*        background-color: red;*/
+/*    }*/
+/*}*/
+
+
+div {
+    height: 200px;
+    width: 200px;
+    margin:10px;
+
+}
+@media (max-width: 600px) {
+    .sm-red {
+        background-color: red;
+    }
+}
+@media (min-width: 600px) {
+    .med-green {
+        background-color: green;
+            }
+    .width {
+        width:400px;
+    }
+    .disalign {
+      display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    .lg-blue {
+        background-color: blue;
+    }
+    .width {
+        width:100px;
+    }
+    .disalign {
+        display: revert;
+        float:right;
+
+    }
+}
+

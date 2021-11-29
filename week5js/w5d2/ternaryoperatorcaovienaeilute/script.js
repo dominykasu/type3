@@ -1,56 +1,27 @@
-let car = "bmw";
-if (car === "vw" || car === "audi"){
-    console.log("VW grupe");
-}
-else if (car === "bmw" || car === "mini") {
-    console.log ("bmw grupe");
-}
-else {
-    console.log("nepriklauso");
-}
+const year = 2020;
+// year === 2021 ? console.log("this year") : console.log("prev year");
+const currentYear = year === 2021 ? "this year" : "prev year";
+console.log(currentYear);
 ////
-let userInput = "morka";
-switch (userInput) {
-    case "morka":
-    case "kopustas":
-    case "agurkas":
-    case "salota":
-    case "svogunas":
-        console.log("tai yra darzove");
-        break;
-    case "braske":
-    case "obuolys":
-    case "kriause":
-    case "vysnia":
-    case "tresne":
-        console.log("tai yra vaisius");
-        break;
-}
-////
-const weekDay = 1;
+const myName = "Dom";
+const isMyName = myName === "Dom" ? "yes, your name correct" : "not your name";
+console.log(isMyName);
+///
+const clientAge = 20;
+const legalAge = 18;
 
-switch (weekDay) {
-    case 0:
-        console.log("tai yra pirm");
-        break;
-    case 1:
-        console.log("tai yra antr");
-        break;
-    case 2:
-        console.log("tai yra trec");
-        break;
-    case 3:
-        console.log("tai yra ketv");
-        break;
-    case 4:
-        console.log("tai yra penkt");
-        break;
-    case 5:
-        console.log("tai yra sest");
-        break;
-    case 6:
-        console.log("tai yra sekm");
-        break;
-}
+const canDrive = clientAge >= legalAge ? "yes you can drive" : "cant drive";
+console.log(canDrive);
 ////
 
+const clientAge1 = -1;
+const legalAge1 = 18;
+
+let canDrive1 = clientAge1 < 0 || clientAge1 > 120 ? "invalid age" : canDrive2 = clientAge1 >= legalAge1 ? "yes you can drive" : "cant drive";
+console.log(canDrive1);
+
+//
+
+const phone = "aiPhone";
+const isIphoneUser = phone === 'iPhone';
+console.log(isIphoneUser);

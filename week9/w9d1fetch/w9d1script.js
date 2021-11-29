@@ -55,6 +55,7 @@ fetch('http://167.99.138.67:1111/getallposts')
         for (let i = 33; i < 43; i++) {
             container.innerHTML += `
             <div class="card">
+            
             <h3>${ads[i].title}</h3>
             <h4>${ads[i].username}</h4>
             <p>${ads[i].description}</p>

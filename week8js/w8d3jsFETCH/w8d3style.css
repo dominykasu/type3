@@ -1,0 +1,23 @@
+h5 {
+    width:150px;
+    background-color: #8a8a8a;
+    border-radius: 10%;
+    padding:5px;
+}
+/*body {*/
+/*    display:flex;*/
+/*    text-align: center;*/
+/*}*/
+.joke {
+    background-color: #ffffff;
+    border-radius: 10%;
+    padding:5px;
+}
+
+/*city*/
+/*state*/
+/*oistcide*/
+/*phone*/
+.d-flex {
+    flex-wrap: wrap;
+}

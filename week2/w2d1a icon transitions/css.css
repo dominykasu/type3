@@ -1,0 +1,70 @@
+i {
+    font-size:50px;
+}
+.main {
+    background-color: orange;
+    width:300px;
+    height: 1000px;
+    flex-direction: column;
+
+
+}
+.t1 {
+    background-color: white;
+    width:270px;
+    height: 190px;
+    margin:10px;
+
+}
+.text {
+    margin:10px;
+}
+.flex {
+    display: flex;
+}
+.center {
+    justify-content: center;
+}
+.items-c {
+    align-items: center;
+}
+/*.fa-sleigh:hover p.text{*/
+/*    color: darkred;*/
+/*}*/
+
+.aaa:hover p.text {
+    color: red;
+}
+p {
+    transition: color 1s ease;
+    font-family: 'Ephesis', Arial;
+    font-size: 25px;
+}
+.bbb:hover i.fa-snowman {
+    transform: scale(1.5);
+}
+.fa-snowman {
+    transition: transform 1s;
+}
+.ccc i {
+    transition: transform 1s;
+}
+.ccc:hover i{
+    transform: rotate(90deg);
+}
+.ddd i.fa-menorah {
+    /*transition: margin 1s;*/
+    transition: all 1s
+}
+.ddd:hover .fa-menorah{
+    margin:10px;
+    padding: 50px;
+
+}
+.eee i.fa-mug-hot {
+    transition: opacity 1s;
+}
+.eee:hover i.fa-mug-hot{
+    opacity: 0;
+    /*arba display:none, bet neiseina transition daryt*/
+}

@@ -1,0 +1,19 @@
+button {
+    width:100px;
+}
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #04AA6D;
+}
+.male {
+    border:3px solid blue;
+}
+.female {
+    border:3px solid pink;
+}

@@ -1,0 +1,56 @@
+/*.style class on div*/
+/*categoiry addreess
+/*sub cat - city*!*/
+/*content generator:*/
+/*category text: category atsiranda random is api*/
+/*sub cat: category  text*/
+/*overflow hidden galima, jei kortele auksit turi*/
+/*teksta atvaizduot kaip teksta, img atvaizduot kaip img
+/**!patikrinti at stringas includina http*/
+/*append card - card pavaizduoja apacioje*/
+.cardGenArea, .contGenArea, .cardPreviewArea {
+    border:1px solid gray;
+    width:400px;
+    margin:5px;
+    padding: 8px;
+}
+.cardGenArea input {
+    width:100px;
+    margin:5px;
+    padding:5px;
+    height: 20px;
+}
+.cardGenArea .red {
+    background-color: #ff6767;
+
+}
+.cardGenArea .green {
+    background-color: #96f396;
+
+}
+.cardGenArea .blue {
+    background-color: #7272ff;
+
+}
+.cardGenArea .violet {
+    background-color: #720372;
+
+}
+.cardGenArea .red,.cardGenArea .green,.cardGenArea .blue,.cardGenArea .violet {
+    color: white;
+    width:70px;
+}
+.selected {
+    border: 2px solid black;
+}
+img {
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+#error-text {
+    color: rgba(255, 2, 2, 0.77)
+}
+#cardPreview {
+    overflow: hidden;
+}

@@ -1,0 +1,53 @@
+.pc, .player {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.score {
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+}
+
+.selected {
+    border: 1px solid green;
+}
+
+/*function selectionPl() {*/
+
+/*if(  selectionP === "rockP"){*/
+/*    rockP.classList.add("selected")*/
+/*    paperP.classList.remove("selected")*/
+/*    sciP.classList.remove("selected")    }*/
+/*if (selectionP === "paperP"){*/
+
+/*    paperP.classList.add("selected")*/
+/*    rockP.classList.remove("selected")*/
+/*    sciP.classList.remove("selected")}*/
+/*if (selectionP === "sciP"){*/
+
+/*    sciP.classList.add("selected")*/
+/*    paperP.classList.remove("selected")*/
+/*    rockP.classList.remove("selected")}*/
+
+/*}*/
+
+/*function selectionCo() {*/
+/*if(selectionC === "rockC"){*/
+/*    rockC.classList.add("selected")*/
+/*    paperC.classList.remove("selected")*/
+/*    sciC.classList.remove("selected")*/
+/*}*/
+/*if(selectionC === "paperC"){*/
+/*    paperC.classList.add("selected")*/
+/*    rockC.classList.remove("selected")*/
+/*    sciC.classList.remove("selected")*/
+/*}*/
+/*if( selectionC === "sciC"){*/
+/*    sciC.classList.add("selected")*/
+/*    paperC.classList.remove("selected")*/
+/*    rockC.classList.remove("selected")*/
+/*}*/
+
+/*}*/

@@ -1,0 +1,22 @@
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+.box {
+    height:200px;
+    width:200px;
+    border:1px solid black;
+
+
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+button {
+    padding:5px;
+    margin:10px;
+
+}
