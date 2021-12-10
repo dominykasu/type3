@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #6bbd6b;
+    height: 95vh;
+    font-family: monospace;
+}
+
+.button {
+    background-color: #589658;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.card img {
+    height: 200px;
+    margin: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.grow1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex:1 ;
+}
+
+.playButtons {
+    display: none;
+}
+
+.playButtons div {
+    margin: 10px;
+    flex: 1;
+}
+
+.points {
+    padding: 25px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}

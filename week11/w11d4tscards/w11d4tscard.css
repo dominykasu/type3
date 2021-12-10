@@ -1,0 +1,10 @@
+.test {
+    background-color:forestgreen;
+    color:white;
+    font-weight: bold;
+    padding:10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+}

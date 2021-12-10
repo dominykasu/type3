@@ -1,0 +1,21 @@
+.landCard {
+    display: flex;
+    border: 1px solid gray;
+    margin:5px;
+    padding:5px;
+}
+
+.d-flex {
+    display:flex;
+}
+#buyLandButton {
+    margin-left:5px;
+}
+.notEnoughGoldAlert {
+    display:none;
+    color:red;
+    font-weight: bold;
+    background-color: black;
+    padding:5px;
+    border-radius: 10px;
+}

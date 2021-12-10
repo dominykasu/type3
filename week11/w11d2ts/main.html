@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="w11d2ts.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="w11d2style.css">
+
+    <!--    cd/path/path arba cd ../ -->
+<!-- tsc --init   -->
+<!--    tsc   -->
+    </head>
+<body>
+<div class="container">
+    <div class="board d-flex justify-content-between">
+        <div class="player d-flex flex-column text-center">
+            <div id="pCards" class="cards d-flex flex-wrap justify-content-evenly">
+
+            </div>
+            <div id="playerScore" class="score">0</div>
+            <div class="playerButtons d-flex justify-content-evenly">
+                <div class="pButton1"><button id="hit">Hit</button></div>
+
+            </div>
+        </div>
+        <div class="deal"><button id="deal">Deal Cards</button></div>
+        <div id="result" class="result"></div>
+        <div class="deal"><button id="reshuffle">Shuffle</button></div>
+        <div class="pc d-flex flex-column text-center">
+            <div id="pcCards" class="cards d-flex justify-content-evenly">
+
+            </div>
+
+            <div id="pcScore" class="score">0</div>
+
+
+            <div class="pcButtons d-flex justify-content-evenly">
+<!--         <div class="pcButton1"><button id="pcHit">Hit</button></div>-->
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
