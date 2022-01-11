@@ -1,0 +1,79 @@
+.App {
+    display: flex;
+}
+
+.grow1 {
+    flex: 1;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.colorCircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.colorCircle:hover {
+    transform: scale(1.1);
+}
+
+.mainChat {
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.mainChat div {
+    margin: 5px 10px;
+}
+
+textarea {
+    border: none;
+    background-color: #e5e5e5;
+    resize: none;
+    height: 200px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.profileImage {
+    height: 200px;
+}
+
+.userProfile {
+    width: 300px;
+    align-items: center;
+}
+
+.starRating img {
+    height: 50px;
+}
+
+.navigation {
+    margin-top: 50px;
+}
+
+.navigation a {
+    margin: 10px;
+}
+
+.review {
+    margin: 10px;
+}
