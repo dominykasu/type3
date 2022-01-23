@@ -1,7 +1,7 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {updateWeapon} from "../features/weapon";
-import {removeWeapon} from "../features/weapon";
+
 import {updateInventory} from "../features/inventory";
 
 const CharacterInfo = () => {

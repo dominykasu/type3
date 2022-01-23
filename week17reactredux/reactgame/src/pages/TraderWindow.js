@@ -4,7 +4,7 @@ import Weapons from "../components/Weapons";
 import Potions from "../components/Potions";
 import {useState} from "react";
 import Inventory from "../components/Inventory";
-import CharacterInfo from "../components/CharacterInfo";
+
 const TraderWindow = () => {
 
 const [getShop, setShop] = useState(true)

@@ -1,7 +1,6 @@
 import React from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import Inventory from "./Inventory";
-import {useState} from "react";
+
 import {updateInventory} from "../features/inventory";
 import {updateWeapon} from "../features/weapon";
 const PlayerArena = () => {
