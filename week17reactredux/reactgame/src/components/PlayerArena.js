@@ -57,7 +57,7 @@ const PlayerArena = () => {
                     <p>Strength: {character.strength}</p>
                     <p>Inventory Slots: {character.inventorySlots}</p>
                     <p>Your Gold: {character.gold}</p>
-<Inventory/>
+{/*<Inventory/>*/}
                 </div>
             </div>
         </div>

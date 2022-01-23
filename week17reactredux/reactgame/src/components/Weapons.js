@@ -4,16 +4,23 @@ import context from "../context/context";
 import {useSelector} from "react-redux";
 import {useDispatch} from "react-redux";
 import {updateInventory} from "../features/inventory";
+import {updateCharacterGold} from "../features/character";
+
 const Weapons = () => {
     const {trader} = useContext(context)
 
     const dispatch = useDispatch()
 
     const inventorySlots = useSelector((state)=> state.character.value.inventorySlots)
+    const gold = useSelector((state)=> state.character.value.gold)
 
     let inventory = useSelector((state)=> state.inventory.value)
+
     function buyWeapon(x){
-        if (inventory.length < inventorySlots){
+        let totalGold = gold
+        if (inventory.length < inventorySlots && gold > x.price){
+            totalGold -= x.price
+            dispatch(updateCharacterGold(totalGold))
                 dispatch(updateInventory([...inventory,x]))
     }
 

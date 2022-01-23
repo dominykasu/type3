@@ -28,3 +28,9 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+//TODO: fix max health limit in arena
+//TODO: Add stamina potions
+//TODO: Weapon Effects
+//TODO Style it
