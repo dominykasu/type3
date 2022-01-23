@@ -27,19 +27,22 @@ const Weapons = () => {
 }
 
 
-
     return (
 
         <div className="d-flex f-wrap" >
 
-            {trader.weapons.map((x,index)=><div key={index} onClick={() => buyWeapon(x,index)}>
+            {trader.weapons.map((x,index)=><div className="weapons" key={index} onClick={() => buyWeapon(x,index)}>
                 <img src={x.image}/>
                 <p>Price: {x.price}</p>
                 <p>Max Damage: {x.maxDamage}</p>
                 <p>Energy Per hit: {x.energyPerHit}</p>
                 <div className="d-flex">
-                     Effects: {x.effects.map((x,index)=>
-                <div key={index}>{x} </div>
+
+
+                    {Object.keys(x.effects).length > 0 ? <div>Effects:</div> : ""}
+                     {x.effects.map((x,index)=><div>
+                {Object.keys(x).length > 0 ? <div key={index}>  &nbsp;{x} </div> : ""}
+                    </div>
                 )}</div>
 
 
@@ -50,7 +53,3 @@ const Weapons = () => {
 
 export default Weapons;
 
-// maxDamage: 4,
-//     price: 50,
-//     energyPerHit: 20,
-//     effects: []

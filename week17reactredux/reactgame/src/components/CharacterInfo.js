@@ -31,16 +31,19 @@ const CharacterInfo = () => {
             <h1 className="align-c">Your Character</h1>
             <div className="d-flex f-wrap">
 
-{/*add weapon stats to char stats*/}
+
 
                     <div className="align-c mainCard">
                         <div className="d-flex">
                         <img src={character.image}/>
-                            {/*<div >Your Weapon:*/}
-                            {Object.keys(weapon).length === 0 ? "" : <img onClick={loseWeapon} src={weapon.image}/>}
+                            <div >Your Weapon:
+                            <div className="eqWeapon">
+                                {Object.keys(weapon).length === 0 ? "" : <img onClick={loseWeapon} src={weapon.image}/>}
+                            </div>
+
 
                         </div>
-                        {/*</div>*/}
+                        </div>
                         <h1 >{character.race}</h1>
                         { Object.keys(weapon).length > 0 && <div>
 

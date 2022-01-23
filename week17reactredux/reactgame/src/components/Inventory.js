@@ -72,9 +72,9 @@ const Inventory = ({yourHp}) => {
     console.log()
     return (
         <div>
-<h1>Inventory</h1>
-            Your Gold: {character.gold}
-            <div className="d-flex">
+<h1>Inventory:</h1>
+            Your Gold: {character.gold}      Max Slots: {character.inventorySlots}
+            <div className="d-flex inventory">
             {inventory.map((x,index) => <div className="inventorySlot" onClick={() => equipWeapon(x, index)} key={index}>
 
                 <img src={x.image}/>

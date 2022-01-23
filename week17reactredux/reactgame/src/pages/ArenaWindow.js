@@ -12,11 +12,11 @@ const ArenaWindow = () => {
 
     return (
         <div className="d-flex">
-           <div>
+           <div className="column1">
                <PlayerArena/>
            </div>
 
-            <div>
+            <div className="column2">
             <EnemyArena/>
         </div>
         </div>

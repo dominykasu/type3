@@ -39,17 +39,19 @@ const PlayerArena = () => {
                 <div className="align-c mainCard">
                     <div className="d-flex">
                         <img src={character.image}/>
-                        <h2>Weapon Slot</h2>
-                        {Object.keys(weapon).length === 0 ? "" : <img onClick={loseWeapon} src={weapon.image}/>}
+                        <div >Your Weapon:
+                            <div className="eqWeapon">
+                                {Object.keys(weapon).length === 0 ? "" : <img onClick={loseWeapon} src={weapon.image}/>}
+                            </div>
 
+
+                        </div>
                     </div>
-                    <div>HP BAR</div>
-                    <div>Energy bar</div>
                     <h1>{character.race}</h1>
-                    { Object.keys(weapon).length > 0 && <div>
+                    {/*{ Object.keys(weapon).length > 0 && <div>*/}
 
-                        {weapon.effects.map((x,index) =><div key={index}> Effects: {x}</div>)}
-                    </div>}
+                    {/*    {weapon.effects.map((x,index) =><div key={index}> Effects: {x}</div>)}*/}
+                    {/*</div>}*/}
                     <p>Damage: {character.damage} {Object.keys(weapon).length > 0 && <span>+ 0 ~ {weapon.maxDamage}</span>}</p>
                     <p>Health: {character.health}</p>
                     <p>Energy: {character.energy} {Object.keys(weapon).length > 0 && <span>- {weapon.energyPerHit} per hit</span>}</p>
@@ -57,7 +59,7 @@ const PlayerArena = () => {
                     <p>Strength: {character.strength}</p>
                     <p>Inventory Slots: {character.inventorySlots}</p>
                     <p>Your Gold: {character.gold}</p>
-{/*<Inventory/>*/}
+
                 </div>
             </div>
         </div>

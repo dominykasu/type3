@@ -30,10 +30,10 @@ const Potions = () => {
 
     return (
         <div className="d-flex f-wrap" >
-            {trader.potions.map((x,index)=><div  onClick={() => buyPotion(x,index)} key={index}>
+            {trader.potions.map((x,index)=><div  className="potions" onClick={() => buyPotion(x,index)} key={index}>
                 <img src={x.image}/>
-                <h5>Price: {x.price}</h5>
-                {x.hasOwnProperty("maxDamage") ? <p>Damage: {x.maxDamage}</p> : ""}
+                <p>Price: {x.price}</p>
+                {/*{x.hasOwnProperty("maxDamage") ? <p>Damage: {x.maxDamage}</p> : ""}*/}
                 <p>  {x.title}</p>
             </div>)}
         </div>

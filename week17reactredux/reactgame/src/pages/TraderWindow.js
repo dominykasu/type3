@@ -12,11 +12,11 @@ const [getShop, setShop] = useState(true)
     return (
         <div>
             <Toolbar/>
-            Trader Window
+            <div className="align-c">Trader Window</div>
 
-            <div className="d-flex">
-                <div onClick={()=>setShop(true)}>Weapons</div>
-                <div onClick={()=>setShop(false)}>Potions</div>
+            <div className="d-flex toolbarTrader">
+                <div className="toolbarTrader" onClick={()=>setShop(true)}>Weapons</div>
+                <div className="toolbarTrader" onClick={()=>setShop(false)}>Potions</div>
             </div>
 <div className="d-flex">
             <div className="w-50">
