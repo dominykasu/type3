@@ -8,6 +8,9 @@ import {Provider} from "react-redux";
 import characterReducer from "./features/character";
 import inventoryReducer from "./features/inventory";
 import weaponReducer from "./features/weapon";
+
+
+
 const store = configureStore({
     reducer:{
         character:characterReducer,
@@ -17,9 +20,13 @@ const store = configureStore({
 })
 ReactDOM.render(
   <React.StrictMode>
+
       <Provider store={store}>
+
           <App />
+
       </Provider>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -30,7 +37,5 @@ ReactDOM.render(
 reportWebVitals();
 
 
-//TODO: fix max health limit in arena
-//TODO: Add stamina potions
+
 //TODO: Weapon Effects
-//TODO Style it

@@ -1,10 +1,11 @@
 import './App.css';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import StartWindow from "./pages/StartWindow";
 import MainWindow from "./pages/MainWindow";
 import TraderWindow from "./pages/TraderWindow";
 import ArenaWindow from "./pages/ArenaWindow";
 import context from "./context/context";
+import { HashRouter as Router} from "react-router-dom";
 function App() {
 
 
@@ -1146,7 +1147,7 @@ function App() {
       image: "https://images.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/blte097d3ac18c5b8ed/6165ec51ff59d903990f26e3/EE3E9KVL9ROW1613677289232.png",
       race: "Human",
       damage: 3,
-      health: 150,
+      health: 500,
       energy: 50,
       stamina: 3,
       strength: 1,
@@ -1532,7 +1533,8 @@ function App() {
 
   return (
       <context.Provider value={{trader, monsters, dropItems}}>
-      <BrowserRouter>
+
+      <Router>
         <div className="App">
           <Routes>
             <Route path="/" element={<StartWindow characters={characters}/>}/>
@@ -1543,7 +1545,8 @@ function App() {
 
 
         </div>
-      </BrowserRouter>
+      </Router>
+
       </context.Provider>
   );
 }
