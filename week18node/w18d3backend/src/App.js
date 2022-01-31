@@ -142,6 +142,72 @@ async function register() {
                 console.log(data)
             })
     }
+    const photo = useRef()
+
+    function addPhoto(){
+
+        const image = photo.current.value
+
+
+        const imageTest = {
+            image:image
+        }
+        const options = {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(imageTest)
+        }
+        fetch("http://localhost:4000/addPhoto", options)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+            })
+
+    }
+
+const [getPhotos,setPhotos] = useState(null)
+
+    async function showPhoto(){
+        fetch("http://localhost:4000/showPhoto")
+            .then(res => res.json())
+            .then(data => {
+                setPhotos(data)
+                console.log(data)
+            })
+
+
+    }
+
+  function deletePhoto(x,index){
+      console.log(index)
+const removeIndex = index
+
+
+
+
+
+          const remove = {
+              remove: removeIndex
+
+          }
+
+          const options = {
+              method: "POST",
+              headers: {
+                  "content-type": "application/json"
+              },
+              body: JSON.stringify(remove)
+          }
+          fetch("http://localhost:4000/removePhoto", options)
+              .then(res => res.json())
+              .then(data => {
+                  console.log(data)
+              })
+      }
+
+
 
   return (
     <div className="App">
@@ -179,6 +245,18 @@ async function register() {
 
             <button onClick={remove}>Remove</button>
         </div>
+        <div>
+
+            <input ref={photo} type="text"/>
+
+            <button onClick={addPhoto}>Add Image</button>
+        </div>
+        <button onClick={showPhoto}>Show Image</button>
+        {getPhotos && getPhotos.map(((x,index)=><div key={index}>
+            <img onClick={() => deletePhoto(x,index)} src={x.image}/>
+           </div>)
+        )
+        }
     </div>
   );
 }
