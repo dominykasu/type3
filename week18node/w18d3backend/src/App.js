@@ -1,6 +1,6 @@
 
 import './App.css';
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useRef} from "react";
 
 
@@ -169,6 +169,8 @@ async function register() {
 
 const [getPhotos,setPhotos] = useState(null)
 
+
+
     async function showPhoto(){
         fetch("http://localhost:4000/showPhoto")
             .then(res => res.json())
@@ -208,7 +210,103 @@ const removeIndex = index
       }
 
 
+    const title1 = useRef()
+    const description1 = useRef()
+    const username1 = useRef()
+    const password11 = useRef()
+    const password21 = useRef()
+    const email1 = useRef()
 
+      function createPost(){
+
+
+          const title = title1.current.value
+          const description = description1.current.value
+          const username = username1.current.value
+          const password1 = password11.current.value
+          const password2 = password21.current.value
+          const email = email1.current.value
+
+          // console.log(title, description, username, password1, password2, email)
+
+          const createPost = {
+              title: title,
+              description:description,
+              username:username,
+              password1:password1,
+              password2:password2,
+              email:email
+
+          }
+          // const createPost = {
+          //     title: "lalalatitle",
+          //     description:"asdasdasdadsd",
+          //     username:"USERNAME",
+          //     password1:"password1",
+          //     password2:"password1",
+          //     email:"email@email.lt"
+          //
+          // }
+          console.log(createPost)
+          const options = {
+              method: "POST",
+              headers: {
+                  "content-type": "application/json"
+              },
+              body: JSON.stringify(createPost)
+          }
+          fetch("http://localhost:4000/createPost", options)
+              .then(res => res.json())
+              .then(data => {
+                  console.log(data)
+              })
+      }
+
+      const [getPostsArr, setPostsArr] = useState(null)
+
+    // setInterval(()=>{
+    //
+    //
+    // })
+    useEffect(() => {
+        async function posts(){
+            await  fetch("http://localhost:4000/showPosts")
+                .then(res => res.json())
+                .then(data => {
+                    setPostsArr(data)
+                    // console.log(getPostsArr)
+                })
+        }
+        posts()
+    },[])
+
+    function deletePost(x,index){
+
+        console.log(index)
+        const removeIndex = index
+
+
+
+
+
+        const remove = {
+            remove: removeIndex
+
+        }
+
+        const options = {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(remove)
+        }
+        fetch("http://localhost:4000/removePost", options)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+            })
+    }
   return (
     <div className="App">
      <input ref={input} type="text"/>
@@ -255,6 +353,24 @@ const removeIndex = index
         {getPhotos && getPhotos.map(((x,index)=><div key={index}>
             <img onClick={() => deletePhoto(x,index)} src={x.image}/>
            </div>)
+        )
+        }
+
+        <div>
+            <input ref={title1} type="text" placeholder="title"/>
+            <input ref={description1} type="text" placeholder="description1"/>
+            <input ref={username1} type="text" placeholder="username1"/>
+            <input ref={password11} type="text" placeholder="password11"/>
+            <input ref={password21} type="text" placeholder="password21"/>
+            <input ref={email1} type="text" placeholder="email1"/>
+
+            <button onClick={createPost}>CreatePost</button>
+        </div>
+        {getPostsArr && getPostsArr.map(((x,index)=><div key={index}>
+            <h1>{x.title}</h1>
+            <button onClick={() => deletePost(x,index)}>Delete Post</button>
+                {/*<img src={x.image}/>*/}
+            </div>)
         )
         }
     </div>

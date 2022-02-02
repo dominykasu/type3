@@ -1,6 +1,7 @@
 const validator = require("email-validator");
 let registeredUsers = []
 let photos = []
+let posts = []
 module.exports = {
     reg: (req, res) => {
         const data = req.body
@@ -87,5 +88,47 @@ module.exports = {
         })
 
 
-    }
-}
+    },
+    getInfo:(req,res) => {
+        console.log("asdasd")
+        res.send({ok:"ok"})
+    },
+    createPost:(req,res) => {
+        const post = req.body
+        posts.push(post)
+        console.log(posts)
+        res.send({ok:"createpost ok"})
+    },
+    getPosts:(req,res) => {
+        res.send(posts)
+    },
+    removePost: (req,res) => {
+        const data = req.body
+        console.log(data)
+        console.log(posts)
+
+        posts.filter((x,index) => {
+            if (data.remove === index){
+                console.log(data.remove, index)
+                posts = posts.filter(function(item,index){
+                    return data.remove !== index
+                })
+            }
+
+        })
+        // photos.filter((element, index) => {
+        //
+        //     if (data.remove === index){
+        //
+        //         photos = photos.filter(function(item,index){
+        //             console.log(index,data.remove)
+        //             return data.remove !== index
+        //         })
+        //
+        //
+        //
+        //     }
+        //
+        // })
+
+}}
