@@ -307,6 +307,71 @@ const removeIndex = index
                 console.log(data)
             })
     }
+    const registerNew = useRef()
+    const pass1New = useRef()
+    const pass2New = useRef()
+    const loginNew = useRef()
+    const passwordNew = useRef()
+
+
+
+
+    function regNew(){
+        const regUsername = registerNew.current.value
+        const password1 = pass1New.current.value
+        const password2 = pass2New.current.value
+        console.log(regUsername, password1, password2)
+
+        const reg = {
+            username: regUsername,
+            pass1: password1,
+            pass2: password2
+        }
+
+        const options = {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(reg)
+        }
+        fetch("http://localhost:4000/regNew", options)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                localStorage.setItem('Unique ID', data.id);
+            })
+    }
+
+
+    function logNew(){
+        const logUsername = loginNew.current.value
+        const password = passwordNew.current.value
+        console.log(logUsername,password)
+
+        const log = {
+            username: logUsername,
+            password: password
+
+        }
+
+        const options = {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(log)
+        }
+        fetch("http://localhost:4000/logNew", options)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+
+
+            })
+
+    }
+
   return (
     <div className="App">
      <input ref={input} type="text"/>
@@ -373,6 +438,22 @@ const removeIndex = index
             </div>)
         )
         }
+        <div className="d-flex">
+<div>
+    <h1>Register</h1>
+    <input ref={registerNew} type="text" placeholder="username"/>
+    <input ref={pass1New} type="text" placeholder="pass1"/>
+    <input ref={pass2New} type="text" placeholder="pass2"/>
+    <button onClick={regNew}>Register</button>
+</div>
+            <div>
+                <h1>Login</h1>
+                <input ref={loginNew} type="text" placeholder="username"/>
+                <input ref={passwordNew} type="text" placeholder="password"/>
+
+                <button onClick={logNew}>Login</button>
+            </div>
+        </div>
     </div>
   );
 }
