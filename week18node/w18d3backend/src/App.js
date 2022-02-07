@@ -307,6 +307,49 @@ const removeIndex = index
                 console.log(data)
             })
     }
+
+    const model = useRef()
+    const year = useRef()
+    const color = useRef()
+    const gasConsumption = useRef()
+    const power = useRef()
+
+
+    function postCar(){
+
+        const carModel = model.current.value
+        const carYear = year.current.value
+        const carColor = color.current.value
+        const carGas = gasConsumption.current.value
+        const carPower = power.current.value
+
+
+        // console.log(title, description, username, password1, password2, email)
+
+        const postCar = {
+            model: carModel,
+            year:carYear,
+            color:carColor,
+            gasConsumption:carGas,
+            power:carPower,
+
+        }
+
+        // console.log(createPost)
+        const options = {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(postCar)
+        }
+        fetch("http://localhost:4000/createPost", options)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+            })
+    }
+
   return (
     <div className="App">
      <input ref={input} type="text"/>
@@ -373,6 +416,17 @@ const removeIndex = index
             </div>)
         )
         }
+
+        <div>
+            <input ref={model} type="text" placeholder="model"/>
+            <input ref={year} type="text" placeholder="year"/>
+            <input ref={color} type="text" placeholder="color"/>
+            <input ref={gasConsumption} type="text" placeholder="gasConsumption"/>
+            <input ref={power} type="text" placeholder="power"/>
+
+
+            <button onClick={postCar}>post Car</button>
+        </div>
     </div>
   );
 }
