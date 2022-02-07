@@ -1,7 +1,9 @@
 const validator = require("email-validator");
+const { v4: uuidv4 } = require('uuid');
 let registeredUsers = []
 let photos = []
 let posts = []
+let usersNew = []
 module.exports = {
     reg: (req, res) => {
         const data = req.body
@@ -131,4 +133,55 @@ module.exports = {
         //
         // })
 
-}}
+},
+    regNew: (req,res, next) => {
+       const form = req.body
+        console.log(form, usersNew)
+
+        if(form.username !== form.username.toUpperCase()){
+            res.send({msg:"username needs to be uppercase"})
+        }
+        if(form.username.length < 3 || form.username.length > 20){
+            res.send({msg:"min length 3, max 20"})
+        }
+        if(form.pass1.length < 3 || form.pass1.length > 20 || form.pass1 !== form.pass2){
+            res.send({msg:"Password: min length 3, max 20 and they should match"})
+        } else {
+        const uniId = uuidv4()
+        usersNew.push({...form, uniId})
+        console.log(usersNew)
+      res.send({msg:"reg complete"})
+        }
+    },
+    logNew: (req,res) => {
+        const form = req.body
+        // console.log(form)
+        // console.log(usersNew)
+        if(form.username !== form.username.toUpperCase()){
+            res.send({msg:"username needs to be uppercase"})
+        }
+        if(form.username.length < 3 || form.username.length > 20){
+            res.send({msg:"USERNAME: min length 3, max 20"})
+        }
+        if(form.password.length < 3 || form.password.length > 20 ){
+            res.send({msg:"Password: min length 3, max 20 "})
+        }
+          if(  usersNew.find(x=> x.username === form.username && x.pass1 === form.password)){
+            // const idFilter = usersNew.filter(x => x.username === form.username);
+            // const id = idFilter.uniId
+
+              const id = usersNew.filter(x => {
+                if(  x.username === form.username){
+                    return x
+                }
+              })
+              console.log(id[0].uniId)
+              res.send({msg:"logged on", id:  id[0].uniId})
+          } else {
+              res.send({msg:"user does not exist or password is wrong"})
+          }
+
+
+
+    }
+}

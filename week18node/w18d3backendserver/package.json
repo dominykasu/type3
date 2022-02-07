@@ -18,6 +18,7 @@
     "random-china-city-name": "^0.0.4",
     "random-city-name": "^1.0.2",
     "react-router-dom": "^6.2.1",
+    "uuid": "^8.3.2",
     "whoiser": "^1.13.1"
   },
   "description": ""

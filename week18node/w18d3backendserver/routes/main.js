@@ -23,4 +23,9 @@ router.get("/showPosts", getPosts)
 const {removePost} = require("../controllers/main")
 router.post("/removePost", removePost)
 
+const {regNew} = require("../controllers/main")
+router.post("/regNew", regNew)
+const {logNew} = require("../controllers/main")
+router.post("/logNew", logNew)
+
 module.exports = router
