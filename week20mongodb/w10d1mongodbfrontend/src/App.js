@@ -82,6 +82,8 @@ function App() {
 
   const [getSelect, setSelect] = useState(null)
 
+  const [getFindCar, setFindCar] = useState([])
+
   function searchCar(){
 
     const valueField = valueF.current.value
@@ -105,9 +107,67 @@ function App() {
     fetch("http://localhost:4000/searchCar", options)
         .then(res => res.json())
         .then(data => {
-          console.log(data)
+          setFindCar(data)
         })
 
+  }
+
+  const [getEditCar, setEditCar] = useState(false)
+ const [getCarToEdit, setCarToEdit] = useState(null)
+ async function editCar(x){
+    // console.log(x._id)
+    const byId = x._id
+
+    await  fetch("http://localhost:4000/editCar/"+byId)
+        .then(res => res.json())
+        .then(data => {
+          // carArr.push(data)
+            setCarToEdit(data)
+          console.log(data)
+        })
+setEditCar(true)
+  }
+
+  const changeModelV = useRef()
+    const changeYearV = useRef()
+    const changeColorV = useRef()
+    const changeGasV = useRef()
+    const changePowerV = useRef()
+
+  function finallyEditCar(x){
+
+      const byId = x._id
+
+      const changeModel = changeModelV.current.value
+      const changeYear = changeYearV.current.value
+      const changeColor = changeColorV.current.value
+      const changeGas = changeGasV.current.value
+      const changePower = changePowerV.current.value
+
+      const changeCar = {
+          id:byId,
+          changeModel: changeModel,
+          changeYear: changeYear,
+          changeColor:changeColor,
+          changeGas:changeGas,
+          changePower:changePower
+      }
+
+      // console.log(changeCar)
+      const options = {
+          method: "POST",
+          headers: {
+              "content-type": "application/json"
+          },
+          body: JSON.stringify(changeCar)
+      }
+
+      fetch("http://localhost:4000/editCarFinal/"+byId, options)
+          .then(res => res.json())
+          .then(data => {
+              console.log(data)
+          })
+      setEditCar(false)
   }
 
   return (
@@ -143,6 +203,28 @@ function App() {
         <input  ref={valueF} type="text"/>
         <button onClick={searchCar}>Search Car</button>
       </div>
+      {getEditCar ?
+          getCarToEdit.map((x,index) =>
+              <div key={index}>
+                 <p>Model: <input type="text" ref={changeModelV} defaultValue={x.model}></input></p>
+                  <p> Year:  <input type="number"  ref={changeYearV} defaultValue={x.year}></input></p>
+                  <p> Color: <input type="text"  ref={changeColorV} defaultValue={x.color}></input></p>
+                      <p> Gas: <input type="text"  ref={changeGasV} defaultValue={x.gasConsumption}></input></p>
+                          <p> Power: <input type="text"  ref={changePowerV} defaultValue={x.power}></input></p>
+                  <button onClick={() => finallyEditCar(x)}>Edit</button>
+              </div>
+          )
+          : getFindCar.map((x,index) =>
+            <div key={index}>
+              <h1>{x.model}</h1>
+              <h2>{x.year}</h2>
+              <h3>{x.color}</h3>
+              <h3>{x.gasConsumption}</h3>
+              <h3>{x.power}</h3>
+              <button onClick={() => editCar(x)}>Edit</button>
+            </div>
+      )}
+
     </div>
   );
 }
