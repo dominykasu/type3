@@ -170,6 +170,75 @@ setEditCar(true)
       setEditCar(false)
   }
 
+    const userNameF = useRef()
+    const userPass1F = useRef()
+    const userPass2F = useRef()
+
+  function regUser(){
+
+     let userName = userNameF.current.value
+      let  password1 = userPass1F.current.value
+      let   password2 = userPass2F.current.value
+
+      const userReg = {
+        email:userName,
+          pass1:password1,
+          pass2:password2
+      }
+      console.log(userReg)
+
+      const options = {
+          method: "POST",
+          headers: {
+              "content-type": "application/json"
+          },
+          body: JSON.stringify(userReg)
+      }
+
+      fetch("http://localhost:4000/registration", options)
+          .then(res => res.json())
+          .then(data => {
+              console.log(data)
+          })
+
+
+  }
+
+    const userNameFLogin = useRef()
+    const userPass1FLogin = useRef()
+
+    const [getUser,setUser] = useState(null)
+
+    function logUser(){
+
+        let userName = userNameFLogin.current.value
+        let  password1 = userPass1FLogin.current.value
+
+
+        const userLog = {
+            email:userName,
+            password:password1,
+
+        }
+
+
+        const options = {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(userLog)
+        }
+
+        fetch("http://localhost:4000/login", options)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setUser(data)
+            })
+
+    }
+
   return (
     <div className="App">
       <div>
@@ -203,6 +272,20 @@ setEditCar(true)
         <input  ref={valueF} type="text"/>
         <button onClick={searchCar}>Search Car</button>
       </div>
+
+        <div>
+            <input ref={userNameF} type="text" placeholder="email"/>
+            <input ref={userPass1F} type="text" placeholder="poass1"/>
+            <input ref={userPass2F} type="text" placeholder="pass2"/>
+            <button onClick={regUser}>Register</button>
+        </div>
+
+        <div>
+            <input ref={userNameFLogin} type="text" placeholder="email"/>
+            <input ref={userPass1FLogin} type="text" placeholder="pass"/>
+            <button onClick={logUser}>Log In</button>
+        </div>
+
       {getEditCar ?
           getCarToEdit.map((x,index) =>
               <div key={index}>
