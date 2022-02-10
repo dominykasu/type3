@@ -49,3 +49,35 @@ const userModel = require("./models/userScheme")
 //     console.log(car)
 // }
 // findUser()
+
+// const byId = await userModel.find({_id: car[0]._id})
+// // console.log(byId)
+//
+// await userModel.findOneAndUpdate({_id: car[0]._id}, {$set:{image: "asdasdasd", username: "asd"}})
+
+
+//user password HASH
+
+const bcrypt = require("bcrypt")
+
+
+//suhasinti psw
+async function createCrypt(){
+    const password = "slaptazodis111"
+
+    const hash = await  bcrypt.hash(password, 10)
+
+    console.log(hash)
+}
+
+createCrypt()
+
+async function compare(){
+    const plainPass = "slaptazodis111"
+
+    const compare = await bcrypt.compare(plainPass,"$2b$10$1wbw8zNc9oh.80WYDa.jKuzzmDQjW.rFgEYYtYflv87UUBK3u2hke")
+
+    console.log(compare)
+}
+
+compare()
