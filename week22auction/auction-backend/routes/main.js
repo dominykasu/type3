@@ -7,18 +7,18 @@ const {
     register,
     login,
     getUserInfo,
-    updatePhoto,
-    addPost,
-    getPosts
+    // updatePhoto,
+    addAuction,
+    getAuctions
 
 } = require("../controllers/main")
 
 router.post("/register", middle.validateUser, register)
 router.post("/login", login)
 router.get('/info', getUserInfo)
-router.post('/update', updatePhoto)
-router.post('/post', addPost)
-router.get('/getPosts', getPosts)
+// router.post('/update', updatePhoto)
+router.post('/post',middle.validateAuction, addAuction)
+router.get('/getAuctions', getAuctions)
 
 
 

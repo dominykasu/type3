@@ -9,12 +9,25 @@
       <change afterPath="$PROJECT_DIR$/../../viktorina/viktorina-front-end/viktorina/src/components/ChatRoom.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../viktorina/viktorina-front-end/viktorina/src/components/QuestionsView.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../viktorina/viktorina-front-end/viktorina/src/components/ScoreView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../week17reactredux/reactgame/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../week17reactredux/reactgame/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../week17reactredux/reactgame/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/controllers/main.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/middleware/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/postSchema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/auctionSchema.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/models/userSchema.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/routes/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/LoginPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/PostsPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/ProfilePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/RegisterPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/UploadPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/components/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/plugins/http.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/.idea/.gitignore" afterDir="false" />
@@ -36,6 +49,7 @@
       <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/src/Pages/RegisterPage.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/src/Pages/UploadPage.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/src/plugins/http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week18node/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week18node/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../week18node/w18d3backend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../week18node/w18d3backend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../week18node/w18d3backendserver/routes/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../week18node/w18d3backendserver/routes/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodb/middleware/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodb/middleware/main.js" afterDir="false" />
@@ -74,6 +88,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/routes" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -92,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645618757785</updated>
-      <workItem from="1645618762521" duration="519000" />
+      <workItem from="1645618762521" duration="7094000" />
     </task>
     <servers />
   </component>

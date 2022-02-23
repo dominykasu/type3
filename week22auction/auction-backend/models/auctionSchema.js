@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const auctionSchema = new Schema({
-    email: {
+    user: {
         type: String,
         required: true
     },
@@ -14,8 +14,12 @@ const auctionSchema = new Schema({
         type:String,
         required:true
     },
-    timeCreated:{
-        type:String,
+    startPrice:{
+        type:Number,
+        required:true
+    },
+    endTime:{
+        type:Number,
         required:true
     }
 })
