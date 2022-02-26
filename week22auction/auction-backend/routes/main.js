@@ -9,7 +9,12 @@ const {
     getUserInfo,
     // updatePhoto,
     addAuction,
-    getAuctions
+    getAuctions,
+    getSingleAuction,
+    postBid,
+    userAuction,
+    userBids,
+    winners
 
 } = require("../controllers/main")
 
@@ -19,6 +24,12 @@ router.get('/info', getUserInfo)
 // router.post('/update', updatePhoto)
 router.post('/post',middle.validateAuction, addAuction)
 router.get('/getAuctions', getAuctions)
+
+router.get('/singleAuction/:id', getSingleAuction)
+router.post('/postBid', postBid)
+router.get('/userAuction', userAuction)
+router.get('/userBids', userBids)
+router.post('/winner', winners)
 
 
 

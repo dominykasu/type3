@@ -2,69 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0faaf966-dcb8-434c-a63c-085fd4f7bb08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../viktorina/viktorina-back-end/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../viktorina/viktorina-front-end/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../viktorina/viktorina-front-end/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../viktorina/viktorina-front-end/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../viktorina/viktorina-front-end/viktorina/src/components/ChatRoom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../viktorina/viktorina-front-end/viktorina/src/components/QuestionsView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../viktorina/viktorina-front-end/viktorina/src/components/ScoreView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week17reactredux/reactgame/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week17reactredux/reactgame/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week17reactredux/reactgame/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/auctionSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/userSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/LoginPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/PostsPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/ProfilePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/RegisterPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/UploadPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/components/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/plugins/http.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/controllers/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/middleware/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/models/postSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/models/userSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookies-backend/routes/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/src/Pages/LoginPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/src/Pages/PostsPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/src/Pages/ProfilePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/src/Pages/RegisterPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/src/Pages/UploadPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week22cookies/w22d1cookies/cookiesfrontend/src/plugins/http.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week18node/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week18node/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week18node/w18d3backend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../week18node/w18d3backend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week18node/w18d3backendserver/routes/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../week18node/w18d3backendserver/routes/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodb/middleware/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodb/middleware/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/src/components/adminPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/src/components/adminPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/src/components/betWindow.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/src/components/betWindow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/src/components/toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../week20mongodb/w10d1mongodbfrontend/src/components/toolbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week21reactsocketsfront/w21d1monopoly/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../week21reactsocketsfront/w21d1monopoly/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week21reactsocketsfront/w21d1monopoly/backend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../week21reactsocketsfront/w21d1monopoly/backend/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week21reactsocketsfront/w21d1monopoly/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../week21reactsocketsfront/w21d1monopoly/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week21reactsocketsfront/w21d1monopoly/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../week21reactsocketsfront/w21d1monopoly/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week21reactsocketsfront/w21d1monopoly/monopolygame/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../week21reactsocketsfront/w21d1monopoly/monopolygame/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/SingleAuctionPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/components/SingleAuction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/components/SingleBid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/components/UserBids.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/components/placeBid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auction-frontend/src/components/userAuctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/auctionSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/auctionSchema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auction-frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../auction-frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auction-frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../auction-frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auction-frontend/src/Pages/PostsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/AuctionPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auction-frontend/src/Pages/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../auction-frontend/src/Pages/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auction-frontend/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../auction-frontend/src/components/header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,12 +50,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arny\WebstormProjects\type3\week22auction\auction-backend" />
       <recent name="C:\CodeAcademy\type3\week22auction\auction-backend\routes" />
       <recent name="C:\CodeAcademy\type3\week22auction\auction-backend\models" />
       <recent name="C:\CodeAcademy\type3\week22auction\auction-backend\middleware" />
@@ -108,6 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645618757785</updated>
       <workItem from="1645618762521" duration="7094000" />
+      <workItem from="1645684842077" duration="28975000" />
     </task>
     <servers />
   </component>
@@ -124,5 +89,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

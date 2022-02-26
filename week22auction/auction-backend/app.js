@@ -5,6 +5,8 @@ const app = express()
 const mongoose = require('mongoose')
 const session = require("express-session")
 // app.use(cors({origin: "http://localhost:3000"}))
+require("dotenv").config()
+
 app.use(express.json())
 app.listen(4000)
 
@@ -22,13 +24,13 @@ app.use((req, res, next) => {
 });
 
 app.use(session({
-    secret: "5a6sd8asd6df658fdfg6d5as6d8!w45&#%%",
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }
 }))
 
-mongoose.connect("mongodb+srv://admin:admin@cluster0.03zw4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+mongoose.connect(process.env.MONGO_KEY)
     .then (res => {
         console.log("connection good")
     }).catch (e=>{
