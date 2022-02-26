@@ -9,6 +9,9 @@ const Header = () => {
             <Link to="/register">Register</Link>
             <Link to="/login">Log In</Link>
             <Link to="/info">Auctions</Link>
+            <Link to="/myauctions">My Auctions</Link>
+            <Link to="/mybids">My Bids</Link>
+
         </div>
     );
 };

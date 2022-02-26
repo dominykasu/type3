@@ -1,0 +1,89 @@
+.d-flex {
+    display: flex;
+}
+.grow1 {
+    flex-grow: 1;
+}
+.grow5 {
+    flex-grow: 5;
+}
+.bidPhoto {
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+.p20 {
+    padding:20px;
+}
+.ml20 {
+    margin-left:20px;
+}
+img {
+    width:100px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.toolbar {
+    padding: 20px;
+    background-color: #282828;
+    color: wheat;
+    font-weight: 700;
+}
+
+.toolbar a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: wheat;
+}
+
+.userCard {
+    padding: 20px;
+    margin: 10px;
+    background-color: #efefef;
+
+}
+.column  {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.a-center {
+    align-items: center;
+}
+
+.space-btw {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+button {
+ margin-left: 20px;
+    text-align: center;
+    font-weight: 700;
+    background-color: gray;
+    color: black;
+    margin-top: 30px;
+}
+.m-top {
+    margin-top:-20px;
+}
+.m-top10 {
+    margin-top:-5px;
+}
+.m-top20{
+    margin-top:20px;
+}
+.m-top5{
+    margin-top: 5px;
+}
